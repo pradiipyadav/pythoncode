@@ -25,7 +25,7 @@ class Oswalk:
 
             if level == 2:  # Level 2 is where I want to recursivly look for files
                 for dirs_ in dirs:
-                    if dirs_ > last_job:  # Check for if folder name is not there, then look for files
+                    if dirs_ > last_job_names:  # Check for if folder name is not there, then look for files
                         for sub_root, sub_dirs, sub_files in (os.walk(os.path.join(root, dirs_), topdown=True)):
                             for sub_files_ in sub_files:
                                 if 'index.html' in sub_files_:
