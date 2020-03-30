@@ -30,6 +30,8 @@ class Oswalk:
                             for sub_files_ in sub_files:
                                 if 'index.html' in sub_files_:
                                     index_files.append(os.path.join(sub_root, sub_files_))
+                    else:
+                        dir.remove(dirs_)
 
             # Debug
         print(" Collected list of files ... ")
